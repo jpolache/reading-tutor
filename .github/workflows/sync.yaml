@@ -27,8 +27,8 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
       run: |
-        mkdir -p generated
-        cd generated
+        mkdir -p build
+        cd build
         for txt in ../levels/*.txt ; do
           node ../actions/generate_audio_files.js "$txt"
         done
