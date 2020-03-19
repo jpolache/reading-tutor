@@ -38,6 +38,7 @@ jobs:
       run: |
         # bail if there are no changes
         git diff-index --quiet HEAD -- && exit
+        git add build
 
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
