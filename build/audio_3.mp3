@@ -1,0 +1,1 @@
+["/usr/local/bin/node","--region","us-east-1","polly","synthesize-speech","--engine","neural","--language","en-US","--output-format","mp3","--voice-id","Joanna","--text-type","text","--text","Test this out."]
