@@ -33,7 +33,7 @@ jobs:
           node ../actions/generate_audio_files.js "$txt"
         done
         cp -r ../scaffold/ ./
-        node ../actions/build_manifest.js
+        node ../actions/build_manifest.js ../levels/*.txt
     - name: Commit files
       run: |
         # bail if there are no changes
