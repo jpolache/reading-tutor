@@ -32,7 +32,7 @@ jobs:
         for txt in ../levels/*.txt ; do
           node ../actions/generate_audio_files.js "$txt"
         done
-        cp -r ../scaffold/ ./
+        cp -r ../scaffold/. ./
         node ../actions/build_manifest.js ../levels/*.txt
     - name: Commit files
       run: |
